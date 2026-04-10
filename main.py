@@ -8,8 +8,6 @@ import streamlit as st
 st.set_page_config(page_title="CSV Data Analyzer", layout="wide")
 
 
-@st.cache_data
-
 def load_file(uploaded_file) -> pd.DataFrame:
     """Load CSV or Excel file into a DataFrame."""
     file_name = uploaded_file.name.lower()
